@@ -2,7 +2,6 @@ import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
 import './App.css';
-import Display from "./Components/Display"
 import Routes from './Routes';
 
 import GlobalStyle from "./Styles/global"
@@ -31,4 +30,3 @@ function App() {
 export default App;
 
 
-// json-server --watch db.json

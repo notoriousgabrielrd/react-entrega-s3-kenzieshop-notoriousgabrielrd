@@ -13,7 +13,6 @@ const Display = () => {
   const history = useHistory();
   const books = useSelector((store) => store.bookList);
 
-  // console.log(books);
   useEffect(() => {
     async function getBooks() {
       const response = await api.get("/products");

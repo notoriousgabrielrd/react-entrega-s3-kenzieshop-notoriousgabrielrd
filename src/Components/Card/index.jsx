@@ -19,6 +19,3 @@ const Card = ({ books, id, showButton = false }) => {
 };
 
 export default Card;
-
-// TRANSFERIR A PROPS BUTTON PARA O BUTTON
-// VA PARA BUTTON
