@@ -1,0 +1,48 @@
+.pai {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 750px;
+}
+
+.div-cart {
+  display: flex;
+  align-items: center;
+  height: 350px;
+}
+
+.button-sair {
+  color: black;
+  background-color: transparent;
+  width: 130px;
+  height: 50px;
+  box-sizing: border-box;
+  border: 0px solid black;
+  border-radius: 0.6em;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.button-sair:hover {
+  color: #fff;
+  outline: 0;
+  box-shadow: 0 0 40px 40px #ff0000 inset;
+}
+.button-sair:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.button-cart {
+  background-color: transparent;
+  border: 0;
+}
