@@ -7,16 +7,16 @@ import "./style.css";
 import { useSelector } from "react-redux";
 import Button from "../Button";
 import { toast } from "react-toastify";
+import { produtos } from "../../db";
 
 const Display = () => {
   const [bdBooks, setBdBooks] = useState([]);
   const history = useHistory();
   const books = useSelector((store) => store.bookList);
-
+  console.log(books);
   useEffect(() => {
-    async function getBooks() {
-      const response = await api.get("/products");
-      const data = response.data.map((value) => ({
+    function getBooks() {
+      const data = produtos.map((value) => ({
         ...value,
       }));
       setBdBooks(data);
@@ -24,7 +24,6 @@ const Display = () => {
     }
     getBooks();
   }, []);
-
   return (
     <Container>
       <Header>

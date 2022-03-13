@@ -1,16 +1,16 @@
 import axios from "axios"
 import { toast } from "react-toastify"
 import { addCart, deleteCart } from "./action"
-
+import { produtos } from "../../db"
 export const addBookThunk = (idBook) => {
 
     return (dispatch, getState) => {
         const { bookList } = getState()
 
-        axios.get(`http://localhost:3000/products/${idBook}`)
-            .then((response) => dispatch(addCart([...bookList, response.data])))
+        const response = produtos.find((value) => value.id === idBook)
 
 
+        dispatch(addCart([...bookList, response]))
         toast.success("Item adicionado ao carrinho!")
 
     }
