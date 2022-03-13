@@ -26,7 +26,7 @@ a{
 
 
 :root{
-
+height: 100vh;
 /* as variaveis do css aqui */
 
 }
